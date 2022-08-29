@@ -1,4 +1,3 @@
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -6,7 +5,7 @@ class Palyer{
     int number ;
     public int guessNumber() {
         Scanner scan =new Scanner(System.in);
-        System.out.println("enter");
+       
      number =scan.nextInt();
         return number;
     }
@@ -27,9 +26,11 @@ class umpire{
     Palyer p2=new Palyer();
     Palyer p3=new Palyer();
     public void collectPalyerNumber(){
-
+        System.out.println("enter player1 ");
         num1=p1.guessNumber();
+        System.out.println("enter player2 ");
         num2=p2.guessNumber();
+        System.out.println("enter player3 ");
         num3=p3.guessNumber();
     }
 
